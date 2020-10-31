@@ -1,0 +1,329 @@
+
+$backgroundcolor: white;
+$textcolor: black;
+
+.body {
+    width: 100%;
+}
+
+.header {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    padding-left: 0px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    
+
+    &_right {
+        float: left;
+        color: black;
+        text-align: left;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        a {
+            border-style: solid;
+            border-color: black;
+            list-style-type: none; 
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            padding-top: 10px; 
+            
+        }
+        
+
+        :hover {
+            background-color: purple;
+            text-decoration: underline;
+            color: black;
+        }
+    }
+
+}
+
+
+
+.first__section {
+
+    &__backgroundimage {
+    background-image: url(../web-project/city_lights.jpeg);
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid purple;
+
+    img {
+    width: 100%;
+    }
+
+    }
+
+    &__button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    align-items: center;
+    }
+}
+
+.second__section {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    
+    &__button {
+        
+        font-family: sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        
+
+
+        button {
+            border: 2px solid blue;
+            font-weight: bold;
+            background-color: white;
+            text-align: center;
+            border-radius: 35px;
+            padding: 20px;
+            text-align: center;
+            margin-right: 20px;
+
+            &:hover {
+                opacity: 0.6;
+                transition: 1s ease-in-out;
+                background-color: gray
+            }
+        }
+
+    }
+
+}
+
+.third__section {
+
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    
+    h2 {
+        padding-top: 20px;
+        padding: 10px;
+        }
+
+
+    img {
+        width: 100%;
+    }
+
+    &__text {
+        background-color:rgba(219, 209, 209, 0.801);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        width: 100%;
+
+        h2 {
+        font-weight: normal;
+        }
+
+        p {
+        padding: 10px;
+        padding-left: 10px;
+        }
+    }
+
+}
+
+
+.fourth__section {
+
+    background-color: white;
+    padding-top: 20px;
+    width: 100%;
+
+    h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-bottom: 10px;
+    }
+
+    p {
+        padding-left: 10px;
+    }
+
+    &__card__text {
+        border-bottom: 2px solid black;
+    }
+
+    img {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+}
+
+
+
+.fifth__section {
+
+    background-color: white;
+    padding-top: 20px;
+    width: 100%;
+
+    h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-bottom: 10px;
+    }
+
+    p {
+        padding-left: 10px;
+    }
+
+    &__card__text__link {
+        text-decoration: purple underline solid;
+
+        &:hover {
+            fill: purple;
+        }
+    }
+
+    img {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+}
+
+
+.sixth__section {
+
+    background-color: white;
+    padding-top: 20px;
+    width: 100%;
+
+    h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-bottom: 10px;
+    }
+
+    p {
+        padding-left: 10px;
+    }
+
+    img {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+}
+
+
+.footer_card {
+    padding: 0px , 0px , 16px;
+    box-sizing: inherit;
+
+    &_right_button {
+
+        button {
+        border: 2px solid black;
+        font-weight: bold;
+        background-color: white;
+        text-align: center;
+        border-radius: 35px;
+        padding: 20px;
+        text-align: center;
+        margin-right: 20px;
+
+        }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .header {
+
+        &_right_button {
+
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+        }
+
+
+    }
+
+    .second__section {
+        
+        
+        &__button {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+    }
+
+    //add comments regarding buttons to amend and show at 500px
+
+    .footer_card {
+        background-color: blanchedalmond;
+
+        h4 {
+            text-align: left;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+
+.header {
+
+    &_right {
+        margin-top: 20px;
+        padding-left: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        height: 40px;
+
+        input {
+            margin-right: 10px;
+        }
+        
+  
+        img {
+          width: 100%;
+        }
+
+        a {
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        } 
+    }
+}
+
+
+
+}
+
+
